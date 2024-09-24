@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title>判断身体质量指数</title>
+</head>
+<body>
+<script type="text/javascript">
+    var BMI = 23;
+    var result = "";
+    if(BMI < 20){
+        result = "体重过轻";
+    }else if(BMI >= 20 && BMI < 25){
+        result = "体重适中";
+    }else if(BMI >= 25 && BMI < 30){
+        result = "体重过重";
+    }else if(BMI >= 30 && BMI < 35){
+        result = "肥胖";
+    }else{
+        result = "非常肥胖";
+    }
+    document.write("BMI："+BMI);
+    document.write("<br>结果："+result);
+</script>
+</body>
+</html>

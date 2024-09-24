@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+<table style="margin: 0 auto; border-collapse: collapse">
+<script type="text/javascript">
+var i = 0;											//外层循环使用的变量
+while(i<10){										//指定外层循环
+	document.write("<tr>");				//输出行标记
+	var j = 1;										//内层循环使用的变量
+	while(j<=10){									//指定内层循环
+		document.write("<td style='width:50px;text-align:center;border:1px solid'>"+(i*10+j)+"</td>");	//输出单元格标记和显示的数字
+		j++;										//内层循环变量加1
+	}
+	document.write("</tr>");							//输出行的结束标记
+	i++;											//外层循环变量加1
+}
+</script>
+</table>
+
+</body>
+</html>
